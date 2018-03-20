@@ -176,7 +176,7 @@ void PulsePal::setInterPulseInterval(uint8_t channel, float timeInSeconds)
     uint32_t timeInCycles = (uint32_t)(timeInSeconds * CycleFreq);
     constrain(&timeInCycles, 1, MAX_Cycles);
     program(channel, 7, timeInCycles);
-    PulsePal::currentOutputParams[channel].interPhaseInterval = timeInSeconds;
+    PulsePal::currentOutputParams[channel].interPulseInterval = timeInSeconds;
 }
 
 void PulsePal::setBurstDuration(uint8_t channel, float timeInSeconds)
@@ -315,7 +315,7 @@ void PulsePal::updateDisplay(string line1, string line2)
     Prefix += 78;
     Prefix += Message.size();
     Prefix.append(Message);
-    serial.writeBytes((unsigned char*)Prefix.data(), Prefix.size());
+    serial.writeBytes((unsigned char*) Prefix.data(), (int) Prefix.size());
 }
 
 void PulsePal::setClientIDString(string idString)
@@ -323,10 +323,10 @@ void PulsePal::setClientIDString(string idString)
     string Prefix;
     Prefix += 213;
     Prefix += 89;
-    int mSize = idString.size();
+    int mSize = (int) idString.size();
     if (mSize == 6) {
         Prefix.append(idString);
-        serial.writeBytes((unsigned char*)Prefix.data(), Prefix.size());
+        serial.writeBytes((unsigned char*) Prefix.data(), (int) Prefix.size());
     }
     else {
         std::cout << "ClientID must be 6 characters. ClientID NOT set." << std::endl;

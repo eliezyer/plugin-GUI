@@ -27,7 +27,6 @@
 
 #include <stdio.h>
 
-
 FileReaderEditor::FileReaderEditor (GenericProcessor* parentNode, bool useDefaultParameterEditors = true)
     : GenericEditor (parentNode, useDefaultParameterEditors)
     , fileReader   (static_cast<FileReader*> (parentNode))
@@ -205,8 +204,6 @@ void FileReaderEditor::startAcquisition()
 {
     recordSelector->setEnabled (false);
     timeLimits->setEnable (false);
-
-    GenericEditor::startAcquisition();
 }
 
 
@@ -214,8 +211,6 @@ void FileReaderEditor::stopAcquisition()
 {
     recordSelector->setEnabled (true);
     timeLimits->setEnable (true);
-
-    GenericEditor::stopAcquisition();
 }
 
 
@@ -352,8 +347,7 @@ void DualTimeComponent::paint (Graphics& g)
         sep = "-";
     else
         sep = "/";
-
-    g.setFont (("Small Text", 10, Font::plain));
+    g.setFont (Font("Small Text", 10, Font::plain));
     g.setColour (Colours::darkgrey);
     g.drawText (sep, 78, 0, 5, 20, Justification::centred, false);
 }
