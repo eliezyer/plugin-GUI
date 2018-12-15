@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KWIKFormat", "KWIKFormat\KWIKFormat.vcxproj", "{554C8744-32CD-427C-A9E5-BF9A44440CED}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -65,6 +65,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntanRecordingController", "IntanRecordingController\IntanRecordingController.vcxproj", "{6BA7767C-DBDA-44DF-8095-220FD1E2D91A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LFP_Viewer_Beta", "LFP_Viewer_Beta\LFP_Viewer_Beta.vcxproj", "{A6E2C4F0-63A3-496B-8929-1B2785FDBBFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Detector", "Detector\Detector.vcxproj", "{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MovementDetector", "MovementDetector\MovementDetector.vcxproj", "{7C364E86-9A96-4440-BB59-7C59C89A5BBE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogicGate", "LogicGate\LogicGate.vcxproj", "{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -364,6 +370,42 @@ Global
 		{A6E2C4F0-63A3-496B-8929-1B2785FDBBFD}.Release|Win32.Build.0 = Release|Win32
 		{A6E2C4F0-63A3-496B-8929-1B2785FDBBFD}.Release|x64.ActiveCfg = Release|x64
 		{A6E2C4F0-63A3-496B-8929-1B2785FDBBFD}.Release|x64.Build.0 = Release|x64
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Debug|Win32.Build.0 = Debug|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Debug|x64.ActiveCfg = Debug|x64
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Debug|x64.Build.0 = Debug|x64
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Release|Win32.ActiveCfg = Release|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Release|Win32.Build.0 = Release|Win32
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Release|x64.ActiveCfg = Release|x64
+		{0F33AB86-C4B0-4704-ACE4-6E416B378E0F}.Release|x64.Build.0 = Release|x64
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Debug|Win32.Build.0 = Debug|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Debug|x64.ActiveCfg = Debug|x64
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Debug|x64.Build.0 = Debug|x64
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Release|Win32.ActiveCfg = Release|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Release|Win32.Build.0 = Release|Win32
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Release|x64.ActiveCfg = Release|x64
+		{7C364E86-9A96-4440-BB59-7C59C89A5BBE}.Release|x64.Build.0 = Release|x64
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Debug|Win32.Build.0 = Debug|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Debug|x64.ActiveCfg = Debug|x64
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Debug|x64.Build.0 = Debug|x64
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Release|Win32.ActiveCfg = Release|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Release|Win32.Build.0 = Release|Win32
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Release|x64.ActiveCfg = Release|x64
+		{99A6F745-8ABA-4042-B5C8-FF4BBAAE8550}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}",
+                "/home/ophien/Documents/programming/plugin-GUI/Source/Plugins/Headers/",
+                "/home/ophien/Documents/programming/plugin-GUI/JuceLibraryCode/",
+                "/home/ophien/Documents/programming/plugin-GUI/JuceLibraryCode/modules/juce_audio_basics/",
+                "/home/ophien/Documents/programming/plugin-GUI/JuceLibraryCode/modules/"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
