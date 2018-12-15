@@ -95,12 +95,12 @@ void Detector::detectRipples(vector<double> &rms_buffer)
 			rms_samples_sinceDetection += 1;
 
 		// enable detection again
-		double auxrT = (rms_refraction_count*getSampleRate())/1000;
-		int refractTime = (int) auxrT; // eu fiz isso pq tive problemas tentando dar cast direto no calculo
+/*		double auxrT = (rms_refraction_count*getSampleRate())/1000;
+		unsigned int refractTime = (rms_refraction_count*getSampleRate()) / 1000;//(int) auxrT; // eu fiz isso pq tive problemas tentando dar cast direto no calculo
 		double auxlD = rms_samples_sinceDetection;
-		int lastDetect = (int) auxlD;
+		unsigned int lastDetect = rms_samples_sinceDetection;//(int) auxlD; */
 
-		if (lastDetect > refractTime)
+		if (rms_samples_sinceDetection > rms_refraction_count)
 		{
 			detected = false;
 			detection_enabled = true;
@@ -155,8 +155,8 @@ void Detector::process(AudioSampleBuffer &buffer)
 	channel = detectorEditor->pluginUI.channel - 1;
 	threshold_amp = detectorEditor->pluginUI.threshold_amp;
 	rms_refraction_count = detectorEditor->pluginUI.rms_refraction_count;
-	int auxSize = (int) ( ( (detectorEditor->pluginUI.rms_samples) / 100) * buffer.getNumSamples() );
-	rms_size = auxSize;
+	unsigned int auxSize = ( ( (detectorEditor->pluginUI.rms_samples) / 100) * buffer.getNumSamples() );
+	rms_size =  auxSize;
 	// Check if any event ocurred and tells this plugin to call the handleEventsFunction()
 	checkForEvents();
 

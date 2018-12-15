@@ -75,7 +75,7 @@ DetectorUI::DetectorUI(){
 	thresholdAmp_label->setColour(TextEditor::textColourId, Colours::black); // Set the label colour
 	addAndMakeVisible(thresholdAmp_label); // Addint the label to the component and turning it visible
 
-	refractoryRMSSamples_label = new Label("label", TRANS("Refract time")); // Create the object and set its name
+	refractoryRMSSamples_label = new Label("label", TRANS("Refract time (ms)")); // Create the object and set its name
 	refractoryRMSSamples_label->setFont(Font(15.10f, Font::plain)); // Set the font size and style
 	refractoryRMSSamples_label->setJustificationType(Justification::centredLeft); // Set the justification of the label
 	refractoryRMSSamples_label->setEditable(false, false, false); // Set if this label can be editable by the user or not
